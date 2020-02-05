@@ -5,7 +5,7 @@ function App() {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetch('https://gitconnected.com/v1/portfolio/sara-alkhamri')
-      .then(res => res.res.json())
+      .then(res => res.json())
       .then(user => {
         setUser(user);
       })
@@ -15,8 +15,8 @@ function App() {
     return <div />
   }
   return (
-   <Pages user={user} />
-  );
+    <Pages user={user} />
+  )
 }
 
 export default App;
