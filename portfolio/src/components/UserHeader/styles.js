@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { blue } from '@carbon/colors';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -29,11 +30,13 @@ export const ViewResumeLink = styled.a`
   font-weight: bold;
   align-items: center;
   margin-top: 1rem;
-  border: 2px solid #2ecc40;
-  background-color: rgba(46, 204, 64, 0.3);
+  /* border: 2px solid #2ecc40; */
+  /* background-color: gray; */
+  background-color: ${blue[20]};
+  color: ${blue[70]};
   transition: background-color 250ms ease;
   &:hover {
-    background-color: #2ecc40;
+    background-color: ${blue[50]};
   }
   svg {
     fill: white;
