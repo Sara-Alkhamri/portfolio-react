@@ -1,14 +1,21 @@
-import React from 'react';
-import './App.css';
-import SideBar from './components/Sidebar'
+import React, { useState, useEffect }from 'react';
+import Pages from './pages'
 
 function App() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    fetch('https://gitconnected.com/v1/portfolio/sara-alkhamri')
+      .then(res => res.res.json())
+      .then(user => {
+        setUser(user);
+      })
+  }, [])
+
+  if (!user) {
+    return <div />
+  }
   return (
-    <div className="App">
-      <h2>It's My Portfolio
-      </h2>
-      <SideBar />
-    </div>
+   <Pages user={user} />
   );
 }
 
