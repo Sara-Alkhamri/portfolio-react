@@ -1,5 +1,5 @@
-import React, { useState, useEffect }from 'react';
-import Pages from './pages'
+import React, { useState, useEffect } from 'react';
+import Pages from './pages';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -8,15 +8,14 @@ function App() {
       .then(res => res.json())
       .then(user => {
         setUser(user);
-      })
-  }, [])
+      });
+  }, []);
 
   if (!user) {
-    return <div />
+    return <div />;
   }
-  return (
-    <Pages user={user} />
-  )
+
+  return <Pages user={user} />;
 }
 
 export default App;

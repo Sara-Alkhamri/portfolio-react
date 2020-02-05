@@ -19,7 +19,7 @@ const Work = ({ user }) => {
                   {work.start.year} to {work.end.year}
                 </span>
               </div>
-              <Paragraph>{work.summary}</Paragraph>
+              <Paragraph>{work.highlights}</Paragraph>
             </WorkItem>
           ))}
         </ul>
