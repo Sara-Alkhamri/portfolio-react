@@ -28,6 +28,7 @@ const Me = ({ user }) => {
                 {profile.network}
               </a>
             </ProfileLink>
+            
           ))}
         </ul>
       </div>
