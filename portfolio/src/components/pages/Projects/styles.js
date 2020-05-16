@@ -14,3 +14,9 @@ export const ProjectTitle = styled.h4`
 export const SkillContainer = styled.div`
   margin-top: 1.2rem;
 `
+export const ProjectImage = styled.img`
+  width: 500px;
+  /* margin-right: 1rem;
+  border-radius: 2px; */
+  background: black;
+`;
