@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph } from '../../styles';
+import Layout from '../../Layout';
+import { SectionTitle, Paragraph } from '../../../styles';
 import { EducationItem, Institution, Degree } from './styles';
 
 const Education = ({ user }) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Pages from './pages';
+import Pages from './components/pages';
 
 function App() {
   const [user, setUser] = useState(null);
